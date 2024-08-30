@@ -25,23 +25,25 @@ Flask Email Sender is a web application that allows users to upload files and se
    cd flask-email-sender
 2. Create a virtual environment:
 
-python -m venv venv
-source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows use `venv\Scripts\activate`
 
-3. Install dependencies:
+4. Install dependencies:
 
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 4. Set up environment variables:
 
   Create a .env file in the root of your project with the following:
 
- - FLASK_APP=app.py
- - FLASK_ENV=development
- - SMTP_SERVER=smtp.gmail.com
- - SMTP_PORT=587
- - SMTP_USER=your_email@gmail.com
- - SMTP_PASSWORD=your_app_password  # Use an App Password for Gmail
+    - FLASK_APP=app.py
+    - FLASK_ENV=development
+    - SMTP_SERVER=smtp.gmail.com
+    - SMTP_PORT=587
+    - SMTP_USER=your_email@gmail.com
+    - SMTP_PASSWORD=your_app_password  # Use an App Password for Gmail
 
 5. Run the application:
 
