@@ -7,7 +7,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your_secret_key'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['UPLOAD_FOLDER'] = 'uploads/'
 
 # SMTP Configuration
