@@ -13,8 +13,8 @@ app.config['UPLOAD_FOLDER'] = 'uploads/'
 # SMTP Configuration
 SMTP_SERVER = 'smtp.gmail.com'  # Change this if using another service
 SMTP_PORT = 587
-SMTP_USER = 'your_gmail@gmail.com'  # Replace with your email
-SMTP_PASSWORD = 'your_app_password'  # Replace with your app-specific password
+SMTP_USER = os.getenv('SMTP_USER')  # Replace with your email
+SMTP_PASSWORD = os.getenv('SMTP_PASSWORD')  # Replace with your app-specific password
 
 @app.route('/')
 def index():
