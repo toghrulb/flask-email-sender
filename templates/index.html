@@ -1,0 +1,25 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload and Send File</title>
+</head>
+<body>
+    <h1>Upload a File and Send to Emails</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="file">Choose a file:</label>
+            <input type="file" id="file" name="file" required>
+        </div>
+        <div>
+            <label for="emails">Enter email addresses (comma-separated):</label>
+            <input type="text" id="emails" name="emails" placeholder="email1@example.com,email2@example.com" required>
+        </div>
+        <div>
+            <button type="submit">Upload and Send</button>
+        </div>
+    </form>
+</body>
+</html>
