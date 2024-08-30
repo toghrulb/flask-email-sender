@@ -36,31 +36,37 @@ Flask Email Sender is a web application that allows users to upload files and se
 
 4. Set up environment variables:
 
-  Create a .env file in the root of your project with the following:
-
-    - FLASK_APP=app.py
-    - FLASK_ENV=development
-    - SMTP_SERVER=smtp.gmail.com
-    - SMTP_PORT=587
-    - SMTP_USER=your_email@gmail.com
-    - SMTP_PASSWORD=your_app_password  # Use an App Password for Gmail
+- Create a .env file in the root of your project with the following:
+   ```bash
+   FLASK_APP=app.py
+   FLASK_ENV=development
+   SMTP_SERVER=smtp.gmail.com
+   SMTP_PORT=587
+   SMTP_USER=your_email@gmail.com
+   SMTP_PASSWORD=your_app_password  # Use an App Password for Gmail
 
 5. Run the application:
-
-  flask run
+   ```bash
+   flask run
 
 ### Usage
 
- - Open your browser and go to http://127.0.0.1:5000.
- - Upload a file and enter comma-separated email addresses.
- - Click the "Upload and Send" button to send the file to the specified recipients.
+ 1. Open your browser and go to http://127.0.0.1:5000.
+ 2. Upload a file and enter comma-separated email addresses.
+ 3. Click the "Upload and Send" button to send the file to the specified recipients.
 
 ### Environment Variables
 
- - SMTP_SERVER	The SMTP server address (e.g., smtp.gmail.com)
- - SMTP_PORT	The SMTP server port (usually 587 for TLS)
- - SMTP_USER	Your email address used to send emails
- - SMTP_PASSWORD	Your SMTP or App-specific password
+> | Variable        | Description                                     |
+> |-----------------|-------------------------------------------------|
+> | `SMTP_SERVER`   | The SMTP server address (e.g., `smtp.gmail.com`)|
+> | `SMTP_PORT`     | The SMTP server port (usually `587` for TLS)    |
+> | `SMTP_USER`     | Your email address used to send emails          |
+> | `SMTP_PASSWORD` | Your SMTP or App-specific password              |
+
+
+
+
 
 
 ### Key Points:
