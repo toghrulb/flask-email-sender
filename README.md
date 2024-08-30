@@ -36,12 +36,12 @@ pip install -r requirements.txt
 
   Create a .env file in the root of your project with the following:
 
-  FLASK_APP=app.py
-  FLASK_ENV=development
-  SMTP_SERVER=smtp.gmail.com
-  SMTP_PORT=587
-  SMTP_USER=your_email@gmail.com
-  SMTP_PASSWORD=your_app_password  # Use an App Password for Gmail
+ - FLASK_APP=app.py
+ - FLASK_ENV=development
+ - SMTP_SERVER=smtp.gmail.com
+ - SMTP_PORT=587
+ - SMTP_USER=your_email@gmail.com
+ - SMTP_PASSWORD=your_app_password  # Use an App Password for Gmail
 
 5. Run the application:
 
