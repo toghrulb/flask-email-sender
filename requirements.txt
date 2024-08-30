@@ -1,2 +1,2 @@
 Flask==2.0.3
-werkzeug==1.0.1  # Specify the version to avoid import errors
+werkzeug==2.0.3  # Specify the version to avoid import errors
